@@ -1,0 +1,55 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title Places Widget
+    %link{:href => "assets/css/reset.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "assets/css/styles.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "assets/css/jquery.mCustomScrollbar.css", :rel => "stylesheet"}
+
+  %body
+    #container
+      %section.image
+      .add-btn
+      .fav-btn
+      .content
+        %h1
+          %span 
+            3
+          comments
+        .comments-container
+          .comments
+            .user-pic.first
+            .txt-bubble
+              %h1 Natalie Portman
+              %br
+              %p
+                Iceland is really beautiful.
+          .comments
+            .user-pic.second
+            .txt-bubble
+              %h1 Sandra Bullock
+              %br
+              %p
+                The Blue Lagoon is amazing. Definitely need to go back.
+          .comments
+            .user-pic.third
+            .txt-bubble
+              %h1 Brad Pitt
+              %br
+              %p
+                I am Brad Pitt and I approve this message.
+
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    %script{:src => "assets/script/jquery.mCustomScrollbar.concat.min.js"}
+    :javascript
+      (function($){
+        $(window).load(function(){
+          $(".comments-container").mCustomScrollbar({
+            theme:"light-2"
+          });
+        });
+      })(jQuery);
+    
+

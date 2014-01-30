@@ -1,0 +1,80 @@
+@import url(http://fonts.googleapis.com/css?family=Satisfy|Strait);
+body {
+  background-image: url("../img/bg.jpg");
+  background-repeat: repeat; }
+
+#widget {
+  margin: 0 auto;
+  width: 460px;
+  height: 164px;
+  background: #ae0202;
+  margin-top: 10%; }
+
+.details-list {
+  list-style: none;
+  margin: 0;
+  padding: 25px 0 0 0;
+  width: 100%; }
+  .details-list table {
+    float: right;
+    height: 100%; }
+    .details-list table td {
+      padding: 0 10px 0 10px; }
+    .details-list table td.label {
+      border-right-width: 2px;
+      border-right-style: solid;
+      border-right-color: #7c0101;
+      -moz-box-shadow: 1px 0px 0px #d10202;
+      -webkit-box-shadow: 1px 0px 0px #d10202;
+      box-shadow: 1px 0px 0px #d10202; }
+  .details-list li {
+    -moz-box-shadow: inset 0px 1px 3px black;
+    -webkit-box-shadow: inset 0px 1px 3px black;
+    box-shadow: inset 0px 1px 3px black;
+    background-color: #950202;
+    height: 33px;
+    margin-bottom: 8px; }
+  .details-list input {
+    background: none;
+    border: none;
+    height: 100%;
+    width: 80px;
+    font-family: "Satisfy", cursive;
+    color: #a6fcfc;
+    font-size: 14px;
+    text-shadow: -1px -1px 0px black;
+    filter: dropshadow(color=black, offx=-1, offy=-1); }
+  .details-list label {
+    font-family: "Strait", sans-serif;
+    color: white;
+    text-shadow: -1px -1px 0px black;
+    filter: dropshadow(color=black, offx=-1, offy=-1); }
+
+.profile-img {
+  position: absolute;
+  width: 295px;
+  height: 100%;
+  background-image: url("../img/profile-img.png"); }
+
+.msg-box {
+  position: relative;
+  width: 37px;
+  height: 164px;
+  float: right;
+  background-color: #1e1e1e;
+  -moz-box-shadow: inset 0px 1px 3px black;
+  -webkit-box-shadow: inset 0px 1px 3px black;
+  box-shadow: inset 0px 1px 3px black;
+  line-height: 164px;
+  text-align: center; }
+  .msg-box:after {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 10px solid transparent;
+    border-left-color: #1e1e1e;
+    left: 100%;
+    top: 50%;
+    margin-top: -10px;
+    vertical-align: middle; }
